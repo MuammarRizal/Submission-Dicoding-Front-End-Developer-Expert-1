@@ -86,13 +86,13 @@
 1. Clone repository ini
 
 ```bash
-    git clone https://github.com/MuammarRizal/Dicoding-blog.git
+    git clone https://github.com/MuammarRizal/Submission-Dicoding-Front-End-Developer-Expert-1.git
 ```
 
 2. Masuk ke folder Dicoding-blog
 
 ```bash
-    cd Dicoding-blog
+    cd Submission-Front-end-Developer-Expert-1
 ```
 
 3. Install Dependencies
