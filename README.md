@@ -9,10 +9,12 @@
       App Bar (Navigation Bar)
       <ul>
         <li>Menampilkan nama aplikasi atau brand logo dari aplikasi katalog restoran (tentukan sendiri nama aplikasi atau brand logonya).</li>
-        <li> Terdapat navigation menu: 
-            <li>Home → mengarah ke root domain.</li>
-            <li>Favorite → target URL cukup bernilai “#” (Sebagai placeholder untuk digunakan pada submission selanjutnya). </li>
-            <li>About Us → arahkan ke profil LinkedIn/Github/Social Media Anda, atau boleh juga ke personal web/blog.</li>
+        <li> Terdapat navigation menu:
+            <ul>
+                <li>Home → mengarah ke root domain.</li>
+                <li>Favorite → target URL cukup bernilai “#” (Sebagai placeholder untuk digunakan pada submission selanjutnya). </li>
+                <li>About Us → arahkan ke profil LinkedIn/Github/Social Media Anda, atau boleh juga ke personal web/blog.</li>
+            </ul>
         </li>
       </ul>
     </li>
