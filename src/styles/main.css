@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  min-height: 44px;
+  min-width: 44px;
+  line-height: 50px;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+}
+img {
+  display: block;
+}
+
+/* navbar */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  padding: 4px;
+  background-color: #bf1722;
+  color: white;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: aqua;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.navbar .logo {
+  min-width: 44px;
+  min-height: 44px;
+}
+.navbar .logo a {
+  line-height: 50px;
+  font-size: 1.6rem;
+  display: block;
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.navbar .nav-list {
+  width: 40%;
+}
+
+.navbar .nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-items .nav-item {
+  width: 100px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.nav-item a {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+  width: 100%;
+}
+
+.nav-item:hover {
+  border: 2px solid green;
+}
+
+/* menu toggle */
+
+.menu-toggle {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  display: none;
+  align-items: center;
+}
+.toggle {
+  min-height: 44px;
+  border: none;
+  border-radius: 15px;
+  min-width: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.toggle span {
+  display: block;
+  border-radius: 5px;
+  width: 30px;
+  height: 5px;
+  background-color: black;
+}
+
+/* HERO SECTION */
+.jumbotron {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-image: url(./../public/images/heros/hero-image_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section {
+  color: aliceblue;
+  font-size: 1.2rem;
+  width: 73.3%;
+  font-style: italic;
+}
+
+.hero-section h2 {
+  margin-bottom: 30px;
+}
+
+/* card list */
+.container {
+  width: 100%;
+  padding-inline: 50px;
+  margin-top: 50px;
+}
+.container > h2 {
+  text-align: center;
+  margin-block: 44px;
+}
+.row {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.cards {
+  width: 100%;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 15px 15px 0 0;
+  padding: 10px;
+}
+.cards > img {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deskripsi > h2,
+h3 {
+  text-align: center;
+  margin-block: 10px;
+}
+
+.deskripsi p {
+  margin-top: 30px;
+  text-align: left;
+  font-weight: 100;
+  font-size: 1.2rem;
+  line-height: 22.4px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 33.4px;
+  background-color: brown;
+  height: 50px;
+}
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    justify-content: center;
+  }
+
+  .container .row {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+
+  .logo a {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+  .navbar .nav-list {
+    width: 50px;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+  }
+
+  .logo a {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .nav-items {
+    flex-direction: column;
+    position: absolute;
+    right: -50%;
+    top: 58px;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 0 0 0 30px;
+    transition: 0.5s;
+  }
+
+  .nav-itemss {
+    position: absolute;
+    right: 0;
+  }
+
+  /* jumbotron */
+  .jumbotron {
+    background-position: center;
+    justify-content: center;
+  }
+  .hero-section {
+    width: 100%;
+  }
+  /* card list */
+  .row {
+    grid-template-columns: repeat(2, auto);
+  }
+}
